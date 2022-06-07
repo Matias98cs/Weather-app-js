@@ -6,7 +6,9 @@ export function mostrarError(msj) {
     const erorP = document.createElement('p');
     erorP.classList.add('p-error')
     erorP.innerHTML = msj;
-    divContainer.appendChild(erorP);
+    divContainer.insertBefore(erorP, divContainer.children[0]);
+
+    // divContainer.appendChild(erorP);
 
     setTimeout(() => {
         erorP.remove()

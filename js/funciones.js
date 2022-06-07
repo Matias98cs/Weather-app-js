@@ -97,7 +97,8 @@ export function crearHTML() {
                     </div>
                 </div>
                 `;
-                divContainer.appendChild(html);
+                // divContainer.appendChild(html);
+                divContainer.insertBefore(html, divContainer.children[0]);
             
         });
     }
