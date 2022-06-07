@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    background-color: rgba(0, 0, 0, 0.61);
+
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #0000009d;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #0000009d;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+
+
+
+.home {
+    display: flex;
+    width: 375px;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 800px;
+    border-radius: 16px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+
+.home-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    width: 100%;
+}
+
+.photo-weather img {
+    max-width: 100px;
+}
+
+.home-title p {
+    font-size: 18px;
+}
+
+.home-search {
+    display: flex;
+    width: 315px;
+    justify-content: center;
+}
+
+.search-input {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search-input form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.from-icon-search {
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    gap: 1em;
+    padding-left: 2em;
+    justify-content: flex-start;
+    border-radius: 16px;
+    height: 50px;
+}
+
+.from-icon-search i {
+    opacity: 0.3;
+}
+
+.from-icon-search input {
+    border: none;
+    text-align: start;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    height: 40px;
+    width: 80%;
+}
+
+
+.from-container-selects select {
+    border: 1px solid white;
+    padding: 12px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 16px;    
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.from-btn-submit {
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.from-btn-submit:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+
+.home-weather-search {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    height: 100%;
+    overflow-y: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+.weather-search {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px 1em 5px 1em;
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+    justify-content: space-between;
+    background-color: #c4c4c47e;
+    border-radius: 16px;
+    height: auto;
+}
+
+
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 150px;
+    justify-content: center;
+}
+
+.name p {
+    font-size: 14px;
+    font-weight: 100;
+
+}
+
+.name strong {
+    font-size: 14px;
+}
+
+.number  {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+}
+
+.temp p {
+    font-size: 25px ;
+}
+
+.temp-max-min {
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+    font-size: 15px;
+    gap: 5px;
+}
+
+
+.col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-2 i {
+    font-size: 30px;
+}
+
+
+.weater-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.weater-img img {
+    width: 100px;
+}
+
+.weater-img p {
+    font-size: 12px;
+}
+
+.p-error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
